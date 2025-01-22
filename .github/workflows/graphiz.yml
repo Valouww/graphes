@@ -13,4 +13,4 @@ jobs:
       run: sudo apt-get install -y graphviz
 
     - name: Lancer Graphviz
-      run: dot -Tpng g1.dot -o g1.png
+      run: ./graphviz1.sh g1
