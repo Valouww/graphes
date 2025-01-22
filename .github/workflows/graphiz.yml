@@ -1,4 +1,4 @@
-urname: graphes
+name: graphes
 on: [push]
 
 jobs:
