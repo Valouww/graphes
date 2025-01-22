@@ -18,5 +18,5 @@ jobs:
       - name: upload du resultat
         uses: actions/upload-artifact@v4
         with:
-          name: nom-arbitraire  # Remplace par un nom arbitraire
-          path: chemin/vers/le/fichier  # Remplace par le chemin réel du fichier
+          name: retourTest
+          path: graphes/retourTest
