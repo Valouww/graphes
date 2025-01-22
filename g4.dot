@@ -1,5 +1,5 @@
 graph {
-node [shape="star" style="filled" fillcolor="aqua"];
+node [image="image.png" shape="none" width="1.5" height="1.5"];
 edge [fontsize="20pt" color="red"];
 F [pos="1,2.5!"];
 E [pos="4.5,1!"];
