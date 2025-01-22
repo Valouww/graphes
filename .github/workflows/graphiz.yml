@@ -1,4 +1,4 @@
-name: graphes
+urname: graphes
 on: [push]
 
 jobs:
@@ -18,5 +18,5 @@ jobs:
       - name: upload du resultat
         uses: actions/upload-artifact@v4
         with:
-          name: g1.svg
+          name: retourSVG
           path: g*.svg
