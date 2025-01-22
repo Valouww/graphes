@@ -1,6 +1,6 @@
 graph {
-node [image="image.png" shape="none" width="1.5" height="1.5"];
-edge [fontsize="20pt" color="red"];
+node [image="image.png" shape="none" width="1" height="1" fixedsize=true fontcolor="red" fontsize="40pt"];
+edge [fontsize="40pt" color="red" fontcolor="blue"];
 F [pos="1,2.5!"];
 E [pos="4.5,1!"];
 D [pos="3,4!"];
