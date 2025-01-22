@@ -13,10 +13,10 @@ jobs:
         run: sudo apt-get install -y graphviz
 
       - name: Lancer Graphviz
-        run: ./graphviz1.sh g1
+        run: ./graphviz2.sh
 
       - name: upload du resultat
         uses: actions/upload-artifact@v4
         with:
           name: retourTest
-          path: g1.svg
+          path: retourTest/*.svg
