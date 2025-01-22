@@ -18,5 +18,5 @@ jobs:
       - name: upload du resultat
         uses: actions/upload-artifact@v4
         with:
-          name: *.svg
+          name: g1.svg
           path: g1.svg
