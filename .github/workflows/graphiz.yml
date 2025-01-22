@@ -6,11 +6,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repository code
-      uses: actions/checkout@v3
+      - name: Check out repository code
+        uses: actions/checkout@v3
 
-    - name: Installation de Graphviz
-      run: sudo apt-get install -y graphviz
+      - name: Installation de Graphviz
+        run: sudo apt-get install -y graphviz
 
-    - name: Lancer Graphviz
-      run: ./graphviz1.sh g1
+      - name: Lancer Graphviz
+        run: ./graphviz1.sh g1
+
+      - name: upload du resultat
+        uses: actions/upload-artifact@v4
+        with:
+          name: nom-arbitraire  # Remplace par un nom arbitraire
+          path: chemin/vers/le/fichier  # Remplace par le chemin réel du fichier
