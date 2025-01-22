@@ -1,27 +1,38 @@
 graph {
-node [image="image.png" shape="none" width="1" height="1" fixedsize=true fontcolor="red" fontsize="40pt"];
-edge [fontsize="40pt" color="red" fontcolor="blue"];
-F [pos="1,2.5!"];
-E [pos="4.5,1!"];
-D [pos="3,4!"];
-C [pos="7,4!"];
-G [pos="1.5,6!"];
-H [pos="4,8!"];
-B [pos="7,8!"];
-A [pos="10,5.5!"];
-A -- C [label="4"];
-A -- B [label="1"];
-B -- C [label="2"];
-B -- D [label="9"];
-B -- G [label="4"];
-B -- H [label="2"];
-C -- D [label="1"];
-C -- E [label="3"];
-D -- E [label="1"];
-D -- G [label="1"];
-D -- F [label="3"];
-E -- F [label="1"];
-F -- G [label="6"];
-G -- H [label="14"];
-}
+    node [image="image.png" shape="none" width="1" height="1" fixedsize=true fontcolor="red" fontsize="40pt"];
+    edge [fontsize="40pt" color="red" fontcolor="blue"];
 
+    F [pos="1,2.5!" label=""];  // Pas de label sur l'image
+    E [pos="4.5,1!" label=""];
+    D [pos="3,4!" label=""];
+    C [pos="7,4!" label=""];
+    G [pos="1.5,6!" label=""];
+    H [pos="4,8!" label=""];
+    B [pos="7,8!" label=""];
+    A [pos="10,5.5!" label=""];
+
+    // Ajouter des labels séparés avec xlabel (en dehors des nœuds)
+    F [xlabel="F", labelloc="n"];
+    E [xlabel="E", labelloc="n"];
+    D [xlabel="D", labelloc="n"];
+    C [xlabel="C", labelloc="n"];
+    G [xlabel="G", labelloc="n"];
+    H [xlabel="H", labelloc="n"];
+    B [xlabel="B", labelloc="n"];
+    A [xlabel="A", labelloc="n"];
+
+    A -- C [label="4"];
+    A -- B [label="1"];
+    B -- C [label="2"];
+    B -- D [label="9"];
+    B -- G [label="4"];
+    B -- H [label="2"];
+    C -- D [label="1"];
+    C -- E [label="3"];
+    D -- E [label="1"];
+    D -- G [label="1"];
+    D -- F [label="3"];
+    E -- F [label="1"];
+    F -- G [label="6"];
+    G -- H [label="14"];
+}
