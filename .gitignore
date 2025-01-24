@@ -1,3 +1,6 @@
 *.png
 *.svg
+*.zip
+*.txt
+*.json
 !image.png
